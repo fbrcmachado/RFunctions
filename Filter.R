@@ -1,9 +1,10 @@
 install.packages("dplyr")
 library(dplyr)
 
-function(base, command, id = ""){
+filtrar <- function  (base, command, id){
   if(command == "filterbyid"){
-    return base%>%filter(ID_CONTA==id)
+    return(base %>% filter(idhm ==id))
   }
-  
+  return ("")
 }
+
